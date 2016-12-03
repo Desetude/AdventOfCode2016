@@ -127,4 +127,4 @@ ENV/
 .ropeproject
 
 # Project specific
-adventofcode/1.py
+adventofcode/template.py

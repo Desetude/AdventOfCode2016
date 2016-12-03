@@ -1,3 +1,3 @@
 def load(file):
-    with open('inputs/' + file + '.txt') as inputFile:
+    with open('inputs/day' + file + '.txt') as inputFile:
         return inputFile.read()
