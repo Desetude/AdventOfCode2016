@@ -2,8 +2,7 @@ from adventofcode import utils
 
 
 class BlockRouter:
-
-    DIRECTIONS = {"L": -90, "R": 90}
+    DIRECTIONS = {'L': -90, 'R': 90}
     ANGLE_DIRECTIONS = {0: [0, 1], 90: [1, 0], 180: [0, -1], 270: [-1, 0]}
 
     def __init__(self):
@@ -34,7 +33,7 @@ class BlockRouter:
 
 def part_one():
     block_router = BlockRouter()
-    for instruction in utils.load('1').split(", "):
+    for instruction in utils.load('1').split(', '):
         direction = instruction[0]
         steps = int(instruction[1:])
         block_router.turn(direction)
@@ -45,7 +44,7 @@ def part_one():
 
 def part_two():
     block_router = BlockRouter()
-    for instruction in utils.load('1').split(", "):
+    for instruction in utils.load('1').split(', '):
         direction = instruction[0]
         steps = int(instruction[1:])
         block_router.turn(direction)
